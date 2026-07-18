@@ -1,0 +1,34 @@
+# =============================================================================
+# .gitconfig 範例設定
+# 複製到 ~/.gitconfig 後修改 name 和 email
+# =============================================================================
+
+[user]
+    name = Your Name
+    email = your@email.com
+
+[core]
+    editor = code --wait
+    autocrlf = input
+    pager = bat
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
+
+[push]
+    autoSetupRemote = true
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    lg = log --graph --oneline --all --decorate
+    last = log -1 HEAD
+    unstage = reset HEAD --
+
+[credential]
+    helper = osxkeychain
