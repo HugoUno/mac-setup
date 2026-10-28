@@ -44,6 +44,47 @@ macOS 套件管理器，安裝 CLI 工具和 GUI App 都靠它。
 
 安裝後建議設定字體為 **MesloLGS NF**（Nerd Font），Powerlevel10k 才能正確顯示圖示。
 
+
+#### Ghostty 常用設定
+
+`setup.sh` 會透過 `configure-ghostty.sh` 套用 `configs/ghostty.conf`。
+只想設定 Ghostty（已安裝 Ghostty 和 Brewfile 中的 Meslo Nerd Font）時：
+
+```bash
+bash configure-ghostty.sh
+```
+
+此組合以日常開發為主，可依喜好調整：
+
+- Catppuccin Latte / Mocha 隨 macOS 明暗模式切換。
+- MesloLGS Nerd Font Mono、14 pt，支援 Powerlevel10k 圖示。
+- 水平 12 / 垂直 10 的留白、95% 不透明度與背景模糊。
+- 儲存視窗狀態、50 MB 捲動緩衝（不是行數）。
+- 左 Option 作為 Alt，方便 shell 按字移動；右 Option 保留 macOS 輸入功能。
+
+| 快捷鍵 | 功能 |
+| --- | --- |
+| Cmd+D / Cmd+Shift+D | 向右 / 向下分割 |
+| Cmd+Option+方向鍵 | 切換分割區 |
+| Cmd+Shift+Enter | 放大 / 還原目前分割區 |
+| Ctrl+` | 顯示 / 隱藏頂部 40% 高度快速終端機（Ghostty 在前景時） |
+| Cmd+Shift+, | 重新載入設定 |
+| Cmd+, | 編輯設定 |
+
+設定寫入 `~/Library/Application Support/com.mitchellh.ghostty/config.ghostty`。
+套用前會驗證語法；若內容不同，原檔會備份到同目錄的 `backup.XXXXXXXX/config.ghostty`。
+重複執行且內容相同時不會新增備份。若偵測到 XDG 路徑或舊版 `config` 檔，
+腳本會停止並提示先整合，以免兩份設定互相覆蓋。此腳本會以 repo 的版本取代目前設定，
+因此自訂內容請先合併回 `configs/ghostty.conf`。
+
+套用後在 Ghostty 按 **Cmd+Shift+,**；視窗狀態等選項可能需開新視窗或重新啟動。
+快速終端機目前使用 App 內快捷鍵。若想在其他 App 中也能呼叫，可將設定改為
+`keybind = global:ctrl+grave_accent=toggle_quick_terminal`，並依 macOS 提示授予 Ghostty 輔助使用權限。
+想取消透明效果可設定 `background-opacity = 1` 與 `background-blur = false`。
+
+還原時，把所需備份複製回 `config.ghostty`，再重新載入即可。
+設定語意參考 [Ghostty 官方設定文件](https://ghostty.org/docs/config/reference)。
+
 ### 4. Shell 環境
 
 - **Oh My Zsh** — Zsh 設定框架
@@ -215,8 +256,11 @@ mac-setup/
 ├── README.md              ← 你正在看的這份指南
 ├── setup.sh               ← 一鍵安裝腳本（可重複執行）
 ├── Brewfile               ← Homebrew 套件清單
+├── configure-ghostty.sh    ← 單獨套用 Ghostty 設定（備份原檔）
 ├── macos-defaults.sh      ← macOS 系統偏好設定
 └── configs/
     ├── .zshrc.example     ← zsh 設定範例
-    └── .gitconfig.example ← git 設定範例
+    ├── .gitconfig.example ← git 設定範例
+    └── ghostty.conf       ← Ghostty 常用設定
 ```
+

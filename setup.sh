@@ -53,6 +53,9 @@ info "透過 Brewfile 安裝套件（這會花一些時間）..."
 brew bundle install --file="${SCRIPT_DIR}/Brewfile"
 ok "Brew bundle 安裝完成"
 
+# Apply the versioned Ghostty preset (backs up an existing configuration).
+bash "${SCRIPT_DIR}/configure-ghostty.sh"
+
 # =============================================================================
 # Step 4: Oh My Zsh
 # =============================================================================
@@ -177,3 +180,4 @@ info "  4. 開啟 iTerm2 / Ghostty 並設為預設終端機"
 info "  5. 開啟 Karabiner-Elements 設定鍵盤對應"
 info "  6. 檢查並自訂 ~/.zshrc（可參考 configs/.zshrc.example）"
 echo ""
+
