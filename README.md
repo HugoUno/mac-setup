@@ -58,7 +58,7 @@ bash configure-ghostty.sh
 
 - Catppuccin Latte / Mocha 隨 macOS 明暗模式切換。
 - MesloLGS Nerd Font Mono、14 pt，支援 Powerlevel10k 圖示。
-- 水平 12 / 垂直 10 的留白、95% 不透明度與背景模糊。
+- 水平 12 / 垂直 10 的留白、80% 不透明度與背景模糊。
 - 儲存視窗狀態、50 MB 捲動緩衝（不是行數）。
 - 左 Option 作為 Alt，方便 shell 按字移動；右 Option 保留 macOS 輸入功能。
 
