@@ -88,6 +88,7 @@
 
 | App                    | 說明                                                       | 價格       | 連結                                                 |
 | ---------------------- | -------------------------------------------------------- | -------- | -------------------------------------------------- |
+| **鼠鬚管 Squirrel（Rime）** | 支援倉頡、注音、拼音等方案的中文輸入法；本機設定放在 `configs/rime/` | 免費開源 | https://rime.im/ |
 | **Karabiner-Elements** | 鍵盤重新對應工具。可以把 CapsLock 改成 Ctrl、自訂複雜快捷鍵，Windows 鍵盤接 Mac 必備 | 免費       | https://karabiner-elements.pqrs.org/               |
 | **Rectangle**          | 視窗管理工具，用快捷鍵快速把視窗排列到螢幕左半/右半/四分之一/全螢幕等                     | 免費       | https://rectangleapp.com/                          |
 | **BetterDisplay**      | 外接螢幕管理，調整解析度、亮度、HDR。尤其對非 Apple 螢幕很有用                     | 免費/Pro   | https://github.com/waydabber/BetterDisplay         |

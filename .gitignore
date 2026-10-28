@@ -1,0 +1,7 @@
+# Rime 學習詞庫、裝置資訊與本機備份不進 Git
+*.userdb/
+*.userdb.txt
+installation.yaml
+backups/
+*.tar.gz
+.DS_Store

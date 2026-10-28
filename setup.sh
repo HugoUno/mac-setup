@@ -179,5 +179,7 @@ info "  3. 在終端機設定中將字體改為 MesloLGS NF"
 info "  4. 開啟 iTerm2 / Ghostty 並設為預設終端機"
 info "  5. 開啟 Karabiner-Elements 設定鍵盤對應"
 info "  6. 檢查並自訂 ~/.zshrc（可參考 configs/.zshrc.example）"
+info "  7. 在系統設定 → 鍵盤 → 輸入方式加入鼠鬚管（可能需要登出再登入）"
+info "     還原鼠鬚管設定請參考 configs/rime/README.md"
 echo ""
 

@@ -178,6 +178,7 @@ git config --global user.email "your@email.com"
 
 | App | 說明 |
 |-----|------|
+| **鼠鬚管 Squirrel（Rime）** | 中文輸入法；[本機設定與還原方式](configs/rime/README.md) |
 | **Karabiner-Elements** | 鍵盤重新對應（CapsLock → Ctrl、自訂快捷鍵）|
 
 ### 視窗與螢幕管理
@@ -258,7 +259,9 @@ mac-setup/
 ├── Brewfile               ← Homebrew 套件清單
 ├── configure-ghostty.sh    ← 單獨套用 Ghostty 設定（備份原檔）
 ├── macos-defaults.sh      ← macOS 系統偏好設定
+├── restore-rime.sh        ← 還原鼠鬚管設定（先備份）
 └── configs/
+    ├── rime/             ← 本機鼠鬚管設定快照與還原說明
     ├── .zshrc.example     ← zsh 設定範例
     ├── .gitconfig.example ← git 設定範例
     └── ghostty.conf       ← Ghostty 常用設定

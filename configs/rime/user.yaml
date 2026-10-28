@@ -1,0 +1,10 @@
+---
+var:
+  option:
+    ascii_punct: true
+    extended_charset: false
+    full_shape: false
+    simplification: false
+    zh_hans: true
+    zh_hant_tw: false
+  previously_selected_schema: cangjie5
