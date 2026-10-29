@@ -212,6 +212,7 @@ git config --global user.email "your@email.com"
 
 | App | 說明 |
 |-----|------|
+| **QLMarkdown** | Finder 選取 `.md` 檔案後按空白鍵，預覽排版後的 Markdown |
 | **AppCleaner** | 完整移除 App（清掉殘留設定檔、快取）|
 | **IINA** | macOS 原生風格影片播放器 |
 | **Stats** | 選單列即時監控 CPU / 記憶體 / 網路 / 電池（免費）|
@@ -219,6 +220,22 @@ git config --global user.email "your@email.com"
 | **AlDente** | 電池健康管理，設定充電上限延長壽命 |
 | **CleanShot X** | 進階截圖（標註、捲動截圖、錄影）付費一次買斷 |
 | **Amphetamine** | 防止螢幕休眠（透過 Mac App Store 安裝）|
+
+### QLMarkdown：空白鍵預覽 Markdown
+
+QLMarkdown 已列在 `Brewfile` 的系統增強工具，可按需求選裝。單獨安裝：
+
+```bash
+brew install --cask qlmarkdown
+```
+
+1. 安裝後先開啟一次 **QLMarkdown.app**，讓 macOS 註冊 Quick Look 擴充功能。
+2. 回到 Finder，選取 `.md` 檔案（例如本專案的 `README.md`），按 **空白鍵**，即可閱讀排版後的標題、表格與程式碼。
+3. 若沒有顯示預覽，從 QLMarkdown 主視窗的 **Open System Settings > … > Quick Look panel…** 按鈕前往系統設定，確認 QLMarkdown 擴充功能已啟用，再關閉預覽並重試。
+
+預覽樣式可在 QLMarkdown 中調整；修改後以 **Cmd+S** 儲存，或啟用自動儲存。
+
+參考：[QLMarkdown 官方安裝與使用說明](https://github.com/sbarex/QLMarkdown#installation)。
 
 ---
 

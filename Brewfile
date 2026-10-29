@@ -67,6 +67,7 @@ cask "telegram"           # Telegram 即時通訊
 cask "squirrel-app"         # 鼠鬚管（Rime）中文輸入法
 cask "karabiner-elements"  # 鍵盤重新對應（CapsLock 改 Ctrl、自訂快捷鍵）
 cask "betterdisplay"       # 外接螢幕管理，調整解析度、亮度
+cask "qlmarkdown"          # Finder 選取 Markdown 檔案後按空白鍵預覽（首次需開啟 App）
 cask "appcleaner"          # 完整移除 App（清掉殘留設定檔、快取）
 cask "iina"                # macOS 原生風格影片播放器
 cask "stats"               # 選單列即時監控 CPU/記憶體/網路/電池（免費開源）
