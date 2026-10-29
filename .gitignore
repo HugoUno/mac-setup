@@ -5,3 +5,5 @@ installation.yaml
 backups/
 *.tar.gz
 .DS_Store
+configs/rime/build/
+configs/rime/sync/

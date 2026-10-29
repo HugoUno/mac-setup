@@ -1,4 +1,4 @@
-# 工具說明總覽
+# Hugo 的 Mac 工具清單
 
 > 每個工具都附上一句話說明和官網連結，方便你了解用途並按需求挑選。
 
@@ -90,7 +90,7 @@
 
 | App                    | 說明                                                       | 價格       | 連結                                                 |
 | ---------------------- | -------------------------------------------------------- | -------- | -------------------------------------------------- |
-| **鼠鬚管 Squirrel（Rime）** | 支援倉頡、注音、拼音等方案的中文輸入法；本機設定放在 `configs/rime/` | 免費開源 | https://rime.im/ |
+| **鼠鬚管 Squirrel（Rime）** | 支援倉頡、注音、拼音等方案的中文輸入法；[我的設定與還原說明](configs/rime/README.md) | 免費開源 | https://rime.im/ |
 | **Karabiner-Elements** | 鍵盤重新對應工具。可以把 CapsLock 改成 Ctrl、自訂複雜快捷鍵，Windows 鍵盤接 Mac 必備 | 免費       | https://karabiner-elements.pqrs.org/               |
 | **BetterDisplay**      | 外接螢幕管理，調整解析度、亮度、HDR。尤其對非 Apple 螢幕很有用                     | 免費/Pro   | https://github.com/waydabber/BetterDisplay         |
 | **AppCleaner**         | 完整移除 App，會找出並清掉殘留的 plist、快取、支援檔案                         | 免費       | https://freemacsoft.net/appcleaner/                |

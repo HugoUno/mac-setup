@@ -1,4 +1,6 @@
-# Mac 新機設定指南
+# Hugo 的個人 Mac 設定
+
+這是我（Hugo）自用的 Mac 環境設定與換機還原專案，保存我的套件選擇、終端機偏好及鼠鬚管設定。儲存庫公開供參考，內容以我的使用習慣為準；其他人使用前請自行調整，日常 App 與系統增強工具不必全部安裝。
 
 > 適用於 macOS Sequoia (15.x) 以上，Apple Silicon (M 系列晶片)。
 > 參考來源：[doggy8088/awesome-mbp-for-developers](https://github.com/doggy8088/awesome-mbp-for-developers)
@@ -21,6 +23,18 @@ bash setup.sh
 > 📖 **不認識某個工具？** 查看 [TOOLS.md](./TOOLS.md)，裡面有每個工具的詳細說明和官網連結。
 
 ---
+
+## 我的鼠鬚管設定
+
+已將本機 `~/Library/Rime` 的個人設定整理至 [`configs/rime/`](configs/rime/README.md)，最近同步日期為 **2026-10-29（Asia/Taipei）**。上次選用方案為 **倉頡五代**，保留注音、拼音等八個方案；候選字每頁 5 個，使用 `native` 配色與 Lucida Grande 21 點字型。
+
+新 Mac 安裝並啟用鼠鬚管後，先切換至其他輸入法並結束 Squirrel 程序，再於專案根目錄執行：
+
+```bash
+bash restore-rime.sh
+```
+
+腳本會先備份舊設定再還原。重新啟動鼠鬚管並執行「重新部署」即可套用；詳細檔案內容、快捷鍵與回復方式見 [鼠鬚管個人設定說明](configs/rime/README.md)。這份備份包含設定與選項狀態，不包含學習詞庫。
 
 ## 第一階段：必備工具
 
@@ -185,7 +199,7 @@ git config --global user.email "your@email.com"
 
 | App | 說明 |
 |-----|------|
-| **鼠鬚管 Squirrel（Rime）** | 中文輸入法；[本機設定與還原方式](configs/rime/README.md) |
+| **鼠鬚管 Squirrel（Rime）** | 中文輸入法；[我的設定與還原方式](configs/rime/README.md) |
 | **Karabiner-Elements** | 鍵盤重新對應（CapsLock → Ctrl、自訂快捷鍵）|
 
 ### 螢幕管理
