@@ -7,11 +7,16 @@
 
 ```bash
 # 1. 下載此資料夾（或 git clone）
-# 2. 執行一鍵安裝
+# 2. 編輯 Brewfile，將不需要的 App 項目前加上 # 註解
+# 3. 執行一鍵安裝
 bash setup.sh
 ```
 
-`setup.sh` 會自動安裝 Homebrew、所有套件、Oh My Zsh 和外掛。可安全重複執行。
+`setup.sh` 會先提醒你檢查安裝清單，確認後才安裝 Homebrew、`Brewfile` 中未註解的套件、Oh My Zsh 和外掛。可安全重複執行。
+
+> **按需求選裝，不必全部安裝。** 安裝前請編輯 `Brewfile`，在不需要的項目前加上 `#`；Mac App Store 區段中的 LINE 和 Amphetamine 也可取消。
+
+確認提示預設為「否」，直接按 Enter 會結束，方便先修改清單再重新執行。若直接使用 `brew bundle install`，不會出現此提示，請先自行檢查 `Brewfile`。
 
 > 📖 **不認識某個工具？** 查看 [TOOLS.md](./TOOLS.md)，裡面有每個工具的詳細說明和官網連結。
 
@@ -93,11 +98,11 @@ bash configure-ghostty.sh
 
 設定完成後執行 `p10k configure` 進行主題初始設定。
 
-### 5. Obsidian
+### 5. Obsidian（選裝）
 
 Markdown 筆記工具，本地優先，支援雙向連結。
 
-### 6. Claude
+### 6. Claude（選裝）
 
 Claude AI 桌面版。
 
@@ -159,6 +164,8 @@ git config --global user.email "your@email.com"
 
 ## 第三階段：日常 App
 
+> **按需求選裝，不必全部安裝。** 安裝前請編輯 `Brewfile`，在不需要的項目前加上 `#`；Mac App Store 區段中的 LINE 和 Amphetamine 也可取消。
+
 | App | 說明 |
 |-----|------|
 | **Google Chrome** | 瀏覽器 |
@@ -171,6 +178,8 @@ git config --global user.email "your@email.com"
 ---
 
 ## 第四階段：系統增強
+
+> **按需求選裝，不必全部安裝。** 安裝前請編輯 `Brewfile`，在不需要的項目前加上 `#`；Mac App Store 區段中的 LINE 和 Amphetamine 也可取消。
 
 ### 鍵盤與輸入
 

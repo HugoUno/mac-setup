@@ -14,6 +14,20 @@ info()  { printf "\033[1;34m[INFO]\033[0m  %s\n" "$1"; }
 ok()    { printf "\033[1;32m[OK]\033[0m    %s\n" "$1"; }
 warn()  { printf "\033[1;33m[WARN]\033[0m  %s\n" "$1"; }
 
+# 安裝前確認：日常 App 與系統增強工具由使用者按需求挑選。
+warn "日常 App 與系統增強工具都是選裝，不必全部安裝。"
+info "請先編輯 ${SCRIPT_DIR}/Brewfile，在不需要的項目前加上 # 註解。"
+info "Mac App Store 區段中的 LINE、Amphetamine 也可取消。"
+info "繼續後會安裝 Brewfile 中所有未註解的項目。"
+if ! read -rp "是否已確認安裝清單並要繼續？(y/N) " confirm_packages; then
+    info "未取得確認；請檢查 Brewfile 後重新執行 bash setup.sh。"
+    exit 0
+fi
+if [[ ! "${confirm_packages}" =~ ^[Yy]$ ]]; then
+    info "已取消安裝；請檢查 Brewfile 後重新執行 bash setup.sh。"
+    exit 0
+fi
+
 # =============================================================================
 # Step 1: Xcode Command Line Tools
 # =============================================================================
@@ -47,7 +61,7 @@ else
 fi
 
 # =============================================================================
-# Step 3: 透過 Brewfile 安裝所有套件
+# Step 3: 透過 Brewfile 安裝使用者保留的套件
 # =============================================================================
 info "透過 Brewfile 安裝套件（這會花一些時間）..."
 brew bundle install --file="${SCRIPT_DIR}/Brewfile"
