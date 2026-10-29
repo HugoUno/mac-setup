@@ -39,7 +39,6 @@ macOS 套件管理器，安裝 CLI 工具和 GUI App 都靠它。
 
 | App | 說明 |
 |-----|------|
-| **iTerm2** | 功能最豐富的終端機，分頁、分割畫面、自訂樣式 |
 | **Ghostty** | 新一代高效能終端機，啟動快、渲染流暢 |
 
 安裝後建議設定字體為 **MesloLGS NF**（Nerd Font），Powerlevel10k 才能正確顯示圖示。
@@ -110,8 +109,7 @@ Claude AI 桌面版。
 
 | App | 說明 |
 |-----|------|
-| **OrbStack** | Docker/Linux VM 的輕量替代品，比 Docker Desktop 省資源 |
-| **Docker Desktop** | 容器化開發環境的標準工具 |
+| **OrbStack** | 輕量的 Docker 容器與 Linux 虛擬機管理工具 |
 
 ### Git 設定
 
@@ -181,11 +179,10 @@ git config --global user.email "your@email.com"
 | **鼠鬚管 Squirrel（Rime）** | 中文輸入法；[本機設定與還原方式](configs/rime/README.md) |
 | **Karabiner-Elements** | 鍵盤重新對應（CapsLock → Ctrl、自訂快捷鍵）|
 
-### 視窗與螢幕管理
+### 螢幕管理
 
 | App | 說明 |
 |-----|------|
-| **Rectangle** | 快捷鍵排列視窗（左半 / 右半 / 四分之一）|
 | **BetterDisplay** | 外接螢幕管理，調整解析度、亮度 |
 
 ### 系統工具
@@ -197,7 +194,6 @@ git config --global user.email "your@email.com"
 | **Stats** | 選單列即時監控 CPU / 記憶體 / 網路 / 電池（免費）|
 | **Ice** | 選單列圖示管理（免費版 Bartender）|
 | **AlDente** | 電池健康管理，設定充電上限延長壽命 |
-| **Keka** | 壓縮 / 解壓縮（zip, 7z, rar, tar）|
 | **CleanShot X** | 進階截圖（標註、捲動截圖、錄影）付費一次買斷 |
 | **Amphetamine** | 防止螢幕休眠（透過 Mac App Store 安裝）|
 

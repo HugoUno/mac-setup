@@ -41,10 +41,8 @@ cask "font-jetbrains-mono-nerd-font" # JetBrains 出的等寬字體
 # =============================================================================
 # 核心 GUI App — 開發工具
 # =============================================================================
-cask "iterm2"             # 功能最豐富的終端機，分頁、分割畫面、自訂樣式
 cask "ghostty"            # 新一代高效能終端機，啟動快、渲染流暢
-cask "orbstack"           # Docker/Linux VM 輕量替代品，比 Docker Desktop 省資源
-cask "docker"             # Docker Desktop，容器化開發環境標準工具
+cask "orbstack"           # 輕量的 Docker 容器與 Linux 虛擬機管理工具
 cask "visual-studio-code" # VS Code 程式碼編輯器
 cask "sublime-text"       # Sublime Text 程式碼編輯器
 cask "temurin"            # Eclipse Temurin (OpenJDK) Java 執行環境
@@ -65,14 +63,12 @@ cask "telegram"           # Telegram 即時通訊
 # =============================================================================
 cask "squirrel-app"         # 鼠鬚管（Rime）中文輸入法
 cask "karabiner-elements"  # 鍵盤重新對應（CapsLock 改 Ctrl、自訂快捷鍵）
-cask "rectangle"           # 視窗管理，快捷鍵排列視窗到螢幕各區域
 cask "betterdisplay"       # 外接螢幕管理，調整解析度、亮度
 cask "appcleaner"          # 完整移除 App（清掉殘留設定檔、快取）
 cask "iina"                # macOS 原生風格影片播放器
 cask "stats"               # 選單列即時監控 CPU/記憶體/網路/電池（免費開源）
 cask "jordanbaird-ice"     # 選單列圖示管理器（免費版 Bartender）
 cask "aldente"             # 電池健康管理，設定充電上限延長電池壽命
-cask "keka"                # 壓縮/解壓縮（zip, 7z, rar, tar）
 cask "cleanshot"           # 進階截圖工具（標註、捲動截圖、錄影，付費一次買斷）
 
 # =============================================================================

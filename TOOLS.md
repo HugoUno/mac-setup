@@ -59,10 +59,8 @@
 
 | App                    | 說明                                                   | 連結                                              |
 | ---------------------- | ---------------------------------------------------- | ----------------------------------------------- |
-| **iTerm2**             | 功能最豐富的終端機，支援分頁、分割畫面、搜尋、自訂樣式                          | https://iterm2.com/                             |
 | **Ghostty**            | 新一代高效能終端機，用 Zig 寫的，啟動快、渲染流暢、設定簡單                     | https://ghostty.org/                            |
-| **OrbStack**           | Docker/Linux VM 的輕量替代品，比 Docker Desktop 省很多 CPU 和記憶體 | https://orbstack.dev/                           |
-| **Docker Desktop**     | 容器化開發環境的標準工具，跑容器、管理映像檔                               | https://www.docker.com/products/docker-desktop/ |
+| **OrbStack**           | 輕量的 Docker 容器與 Linux 虛擬機管理工具 | https://orbstack.dev/                           |
 | **Visual Studio Code** | 微軟的程式碼編輯器，外掛生態系最豐富                                   | https://code.visualstudio.com/                  |
 | **Sublime Text**       | 輕量快速的程式碼編輯器，啟動快、回應迅速，適合快速編輯                          | https://www.sublimetext.com/                    |
 |                        |                                                      |                                                 |
@@ -90,14 +88,12 @@
 | ---------------------- | -------------------------------------------------------- | -------- | -------------------------------------------------- |
 | **鼠鬚管 Squirrel（Rime）** | 支援倉頡、注音、拼音等方案的中文輸入法；本機設定放在 `configs/rime/` | 免費開源 | https://rime.im/ |
 | **Karabiner-Elements** | 鍵盤重新對應工具。可以把 CapsLock 改成 Ctrl、自訂複雜快捷鍵，Windows 鍵盤接 Mac 必備 | 免費       | https://karabiner-elements.pqrs.org/               |
-| **Rectangle**          | 視窗管理工具，用快捷鍵快速把視窗排列到螢幕左半/右半/四分之一/全螢幕等                     | 免費       | https://rectangleapp.com/                          |
 | **BetterDisplay**      | 外接螢幕管理，調整解析度、亮度、HDR。尤其對非 Apple 螢幕很有用                     | 免費/Pro   | https://github.com/waydabber/BetterDisplay         |
 | **AppCleaner**         | 完整移除 App，會找出並清掉殘留的 plist、快取、支援檔案                         | 免費       | https://freemacsoft.net/appcleaner/                |
 | **IINA**               | macOS 原生風格的影片播放器，支援手勢、觸控列、子母畫面                           | 免費       | https://iina.io/                                   |
 | **Stats**              | 在選單列即時顯示 CPU / 記憶體 / 網路 / 磁碟 / 電池監控                      | 免費開源     | https://github.com/exelban/stats                   |
 | **Ice**                | 選單列圖示管理器，把太多的選單列圖示收起來（Bartender 的免費替代品）                  | 免費       | https://github.com/jordanbaird/Ice                 |
 | **AlDente**            | 電池健康管理，可以設定充電上限（例如限制在 80%）來延長電池壽命                        | 免費/Pro   | https://apphousekitchen.com/                       |
-| **Keka**               | 壓縮 / 解壓縮工具，支援 zip, 7z, rar, tar 等格式                      | 免費       | https://www.keka.io/                               |
 | **CleanShot X**        | 進階截圖工具，支援標註、捲動截圖、錄影、GIF、OCR                              | 付費（一次買斷） | https://cleanshot.com/                             |
 | **Amphetamine**        | 防止螢幕休眠 / 系統睡眠，可設定排程和觸發條件（透過 Mac App Store 安裝）            | 免費       | https://apps.apple.com/app/amphetamine/id937984704 |
 

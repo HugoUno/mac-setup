@@ -20,9 +20,6 @@ patch:
       ascii_mode: true
     com.google.Chrome:
       inline: true
-    com.googlecode.iterm2:
-      ascii_mode: true
-      no_inline: true
     com.macromates.TextMate.preview:
       ascii_mode: true
     com.microsoft.VSCode:
